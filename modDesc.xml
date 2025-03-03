@@ -24,6 +24,7 @@ Arbeitsgeschwindigkeit: 15 km/h
     <storeItem xmlFilename="xml/HD50F.xml" />
 	<storeItem xmlFilename="xml/seriesX9.xml" />
 	<storeItem xmlFilename="xml/C16F.xml" />
+	<storeItem xmlFilename="xml/hdht52.xml" />
   </storeItems>
   <brands>
     <brand title="Thunderfarming" image="brand/brand_ThF.dds" name="Thunderfarming" />

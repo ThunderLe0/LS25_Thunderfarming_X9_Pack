@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="hdht52.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="22" filename="$data/shared/assets/lights/lizard/plateNumberLight02.i3d"/>
+    <File fileId="20" filename="$data/shared/assets/lights/lizard/rearLight23.i3d"/>
+    <File fileId="21" filename="$data/shared/assets/lights/lizard/rearLight26.i3d"/>
+    <File fileId="28" filename="$data/shared/clearGlass_diffuse.png"/>
+    <File fileId="29" filename="$data/shared/default_normal.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="27" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+    <File fileId="26" filename="$data/shared/detailLibrary/metallic/clear_specular.png"/>
+    <File fileId="19" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="18" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="8" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="14" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png"/>
+    <File fileId="34" filename="$data/shared/detailLibrary/nonMetallic/reflector/reflector_diffuse.png"/>
+    <File fileId="33" filename="$data/shared/detailLibrary/nonMetallic/reflector/reflector_specular.png"/>
+    <File fileId="17" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.png"/>
+    <File fileId="16" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png"/>
+    <File fileId="15" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
+    <File fileId="2" filename="$data/shared/white_diffuse.png"/>
+    <File fileId="31" filename="$data/vehicles/demco/hdht52/hdht52Decal_diffuse.png"/>
+    <File fileId="32" filename="$data/vehicles/demco/hdht52/hdht52Decal_normal.png"/>
+    <File fileId="30" filename="$data/vehicles/demco/hdht52/hdht52Hoses_vmask.png"/>
+    <File fileId="25" filename="$data/vehicles/demco/hdht52/hdht52Light_emissive.png"/>
+    <File fileId="23" filename="$data/vehicles/demco/hdht52/hdht52Light_normal.png"/>
+    <File fileId="24" filename="$data/vehicles/demco/hdht52/hdht52Light_vmask.png"/>
+    <File fileId="3" filename="$data/vehicles/demco/hdht52/hdht52_normal.png"/>
+    <File fileId="4" filename="$data/vehicles/demco/hdht52/hdht52_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="hdht52_metalPaintedBlack_mat" materialId="259" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="colorScale" value="0 0 0"/>
+    </Material>
+    <Material name="hdht52_plasticPaintedBlack_mat" materialId="12" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="hdht52_rubberBlack_mat" materialId="10" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="15"/>
+      <Custommap name="detailNormal" fileId="16"/>
+      <Custommap name="detailDiffuse" fileId="17"/>
+      <CustomParameter name="porosity" value="0.5"/>
+    </Material>
+    <Material name="hdht52_silverScratched_mat" materialId="11" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="18"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="19"/>
+    </Material>
+    <Material name="hdht52Decal_metalPainted_mat" materialId="17" alphaBlending="true" customShaderId="5" customShaderVariation="vmaskUV2_normalUV3">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+    </Material>
+    <Material name="hdht52Decal_reflectorWhite_01_mat" materialId="16" alphaBlending="true" customShaderId="5" customShaderVariation="vmaskUV2_normalUV3">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="33"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="34"/>
+      <CustomParameter name="colorScale" value="0.752 0.752 0.752"/>
+      <CustomParameter name="clearCoatIntensity" value="0.25"/>
+      <CustomParameter name="clearCoatSmoothness" value="1"/>
+    </Material>
+    <Material name="hdht52Decal_silverScratched_mat" materialId="15" alphaBlending="true" customShaderId="5" customShaderVariation="vmaskUV2_normalUV3">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="18"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="19"/>
+    </Material>
+    <Material name="hdht52Hoses_rubberBlackHoses_mat" materialId="13" customShaderId="5" customShaderVariation="vmaskUV2">
+      <Texture fileId="2"/>
+      <Normalmap fileId="29"/>
+      <Glossmap fileId="30"/>
+      <Custommap name="detailSpecular" fileId="15"/>
+      <Custommap name="detailNormal" fileId="16"/>
+      <Custommap name="detailDiffuse" fileId="17"/>
+      <CustomParameter name="colorScale" value="0.01 0.01 0.01"/>
+      <CustomParameter name="porosity" value="0.5"/>
+    </Material>
+    <Material name="hdht52Light_chrome_alphaBlending_mat" materialId="14" alphaBlending="true" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="28"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+      <Custommap name="detailSpecular" fileId="26"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="27"/>
+      <Custommap name="lightsIntensity" fileId="25"/>
+      <CustomParameter name="colorScale" value="1 0 0"/>
+      <CustomParameter name="alphaBlendingClipThreshold" value="0"/>
+    </Material>
+    <Material name="hdht52Light_chrome_opaque_mat" materialId="7" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="2"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+      <Custommap name="detailSpecular" fileId="26"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="27"/>
+      <Custommap name="lightsIntensity" fileId="25"/>
+      <CustomParameter name="colorScale" value="1 0 0"/>
+    </Material>
+    <Material name="hdht52Light_plasticPaintedBlack_mat" materialId="8" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="2"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+      <Custommap name="lightsIntensity" fileId="25"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="standardSurface1" materialId="6" diffuseColor="0.4 0.4 0.4 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="hdht52.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="hdht52_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" clipDistance="300" nodeId="54" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="hdht52_vis" shapeId="2" clipDistance="300" nodeId="55" castsShadows="true" receiveShadows="true" skinBindNodeIds="55 58 60 62 64 176 178 186 187 194 196 202 204 210 212 218 220 225" materialIds="259,12,10,11">
+        <TransformGroup name="wheels" nodeId="56">
+          <TransformGroup name="wheelLeftMiddle" translation="1.12235 0.297024 -3.47915" nodeId="57">
+            <TransformGroup name="wheelLeftMiddlePart" translation="-0.039475 0 0" clipDistance="300" nodeId="58"/>
+          </TransformGroup>
+          <TransformGroup name="wheelRightMiddle" translation="-1.12238 0.297024 -3.47915" nodeId="59">
+            <TransformGroup name="wheelRightMiddlePart" translation="0.039475 0 0" clipDistance="300" nodeId="60"/>
+          </TransformGroup>
+          <TransformGroup name="wheelLeftBack" translation="1.12235 0.29652 -5.26309" nodeId="61">
+            <TransformGroup name="wheelLeftBackPart" translation="-0.039475 0 0" clipDistance="300" nodeId="62"/>
+          </TransformGroup>
+          <TransformGroup name="wheelRightBack" translation="-1.12238 0.29652 -5.26309" nodeId="63">
+            <TransformGroup name="wheelRightBackPart" translation="0.039475 0 0" clipDistance="300" nodeId="64"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="lights" nodeId="65">
+          <TransformGroup name="sharedLights" nodeId="66">
+            <ReferenceNode name="rearLight23Orange" translation="1.083 0.612135 -8.01195" rotation="-90 0 180" scale="0.909867 0.909867 0.909867" referenceId="20" referenceRuntimeLoaded="false" nodeId="93"/>
+            <ReferenceNode name="rearLight23Red_02" translation="-1.0792 0.612135 -8.01195" rotation="-90 0 180" scale="0.909867 0.909867 0.909867" referenceId="20" referenceRuntimeLoaded="false" nodeId="107"/>
+            <ReferenceNode name="rearLight26Orange" translation="0.113707 0.608299 -8.00905" rotation="-90 0 180" scale="0.453297 0.453297 0.453297" referenceId="21" referenceRuntimeLoaded="false" nodeId="137"/>
+            <ReferenceNode name="rearLight26Red_02" translation="-0.005212 0.608299 -8.00905" rotation="-90 0 180" scale="0.453297 0.453297 0.453297" referenceId="21" referenceRuntimeLoaded="false" nodeId="153"/>
+            <ReferenceNode name="rearLight26Red_03" translation="-0.124397 0.608299 -8.00905" rotation="-90 0 180" scale="0.453297 0.453297 0.453297" referenceId="21" referenceRuntimeLoaded="false" nodeId="155"/>
+            <ReferenceNode name="plateNumberLight02" translation="-0.727184 0.611784 -8.01174" rotation="-90 0 -90" referenceId="22" referenceRuntimeLoaded="false" nodeId="164"/>
+          </TransformGroup>
+          <TransformGroup name="staticLights" nodeId="166">
+            <Shape name="backLights_static" translation="0.000217 0.589914 -7.97605" shapeId="3" clipDistance="75" nodeId="167" castsShadows="true" receiveShadows="true" materialIds="8,7"/>
+            <Shape name="backLightsGlass_static" translation="0.000217 0.589914 -7.97605" shapeId="4" clipDistance="75" nodeId="168" castsShadows="true" receiveShadows="true" materialIds="14"/>
+          </TransformGroup>
+          <TransformGroup name="defaultLights" nodeId="169">
+            <Light name="licensePlateLightHigh" translation="-0.705645 0.611784 -8.03932" rotation="0 -70 0" clipDistance="75" nodeId="170" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" range="0.4" coneAngle="120" dropOff="2"/>
+          </TransformGroup>
+          <TransformGroup name="backLights" nodeId="171">
+            <Light name="backLightsHigh" translation="1.083 0.612135 -8.01195" rotation="-15 0 0" clipDistance="75" nodeId="172" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="130" dropOff="2">
+              <Light name="backLightsHigh2" translation="-2.1622 0 0" clipDistance="75" nodeId="173" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="130" dropOff="2"/>
+            </Light>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="movingParts" nodeId="174">
+          <TransformGroup name="drawbarYRotRefFrame" translation="-1.5e-05 0.733437 7.47846" nodeId="175">
+            <TransformGroup name="drawbarYRot" clipDistance="300" nodeId="176">
+              <TransformGroup name="drawbarXRotRefFrame" translation="1.5e-05 -0.162037 0.14924" nodeId="177">
+                <TransformGroup name="drawbarXRot" clipDistance="300" nodeId="178">
+                  <TransformGroup name="attachable" translation="-1.5e-05 0.162037 -0.14924" nodeId="179">
+                    <TransformGroup name="electric" translation="0.004497 -0.111017 0.974992" rotation="0 0 -15.0002" nodeId="180">
+                      <Shape name="electric_detached" translation="0.203184 -0.113223 -1.07527" rotation="-15.0002 90 0" shapeId="5" clipDistance="300" nodeId="181" castsShadows="true" receiveShadows="true" materialIds="13">
+                        <TransformGroup name="electric_connector" translation="-1.18181 -0.012503 -0.302841" rotation="79.3714 -42.1993 -35.5088" nodeId="182"/>
+                      </Shape>
+                    </TransformGroup>
+                  </TransformGroup>
+                  <Shape name="hdht52_decals" translation="-0.001629 -0.100356 2.23885" shapeId="6" clipDistance="20" nodeId="183" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="15"/>
+                  <TransformGroup name="drawbarXRot_joint" nodeId="184"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="wheels" nodeId="185">
+                <TransformGroup name="wheelLeftFrontPart" translation="0.301625 -0.455727 0.024745" clipDistance="300" nodeId="186"/>
+                <TransformGroup name="wheelRightFrontPart" translation="-0.301625 -0.455727 0.024745" clipDistance="300" nodeId="187"/>
+              </TransformGroup>
+              <Shape name="hdht52_decals" translation="0.000746 -0.193554 -0.014104" shapeId="7" clipDistance="20" nodeId="188" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="15"/>
+              <TransformGroup name="drawbar_joint" nodeId="189"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="dynamicMount" nodeId="190">
+          <Shape name="dynamicMountTrigger" translation="0.01727 0.769282 -1.35378" rotation="0 0 0.106412" shapeId="8" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="191" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+          <TransformGroup name="mountingParts" nodeId="192">
+            <TransformGroup name="mountingPart01Rot" translation="0.680259 0.612764 3.82775" nodeId="193">
+              <TransformGroup name="mountingPart01" translation="0 0 1.18806" clipDistance="300" nodeId="194">
+                <TransformGroup name="mountingPart01PartRot" translation="0.152812 0.071801 0.009397" rotation="0 1.6e-05 -17" nodeId="195">
+                  <TransformGroup name="mountingPart01Part" translation="-0.203 0 0" clipDistance="300" nodeId="196">
+                    <Shape name="hdht52_decals" translation="0.003063 -0.109119 0.110868" rotation="-5e-06 -1.5e-05 17" shapeId="9" clipDistance="40" nodeId="197" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="15"/>
+                    <Shape name="colPart05" translation="0.006403 0.026756 0.001535" rotation="0 -1.6e-05 -0.230287" shapeId="10" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="198" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+                    <Shape name="colPart06" translation="0.113686 0.097407 0.001535" rotation="0 -1.6e-05 -0.230287" shapeId="11" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="199" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+                  </TransformGroup>
+                </TransformGroup>
+                <Shape name="hdht52_decals" translation="0.004209 -0.159411 0.00938" shapeId="12" clipDistance="40" nodeId="200" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="15"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="mountingPart02Rot" translation="0.680259 0.612764 0.318069" nodeId="201">
+              <TransformGroup name="mountingPart02" translation="0 0 -0.946426" clipDistance="300" nodeId="202">
+                <TransformGroup name="mountingPart02PartRot" translation="0.152812 0.071801 0.010269" rotation="0 1.6e-05 -17" nodeId="203">
+                  <TransformGroup name="mountingPart02Part" translation="-0.150177 0 0" clipDistance="300" nodeId="204">
+                    <Shape name="hdht52_decals" translation="-0.019562 -0.108879 0.113867" shapeId="13" clipDistance="40" nodeId="205" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="15"/>
+                    <Shape name="colPart06" translation="0.006403 0.026756 0.002432" rotation="0 -1.6e-05 -0.230287" shapeId="14" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="206" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+                    <Shape name="colPart07" translation="0.113686 0.097407 0.002432" rotation="0 -1.6e-05 -0.230287" shapeId="11" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="207" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+                  </TransformGroup>
+                </TransformGroup>
+                <Shape name="hdht52_decals" translation="0.03249 -0.094515 0.025402" shapeId="15" clipDistance="40" nodeId="208" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="15"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="mountingPart03Rot" translation="0.680259 0.612764 -2.51042" nodeId="209">
+              <TransformGroup name="mountingPart03" translation="0 0 0.352351" clipDistance="300" nodeId="210">
+                <TransformGroup name="mountingPart03PartRot" translation="0.152812 0.071801 0.010269" rotation="0 1.6e-05 -17" nodeId="211">
+                  <TransformGroup name="mountingPart03Part" translation="-0.150521 0 0" clipDistance="300" nodeId="212">
+                    <Shape name="hdht52_decals" translation="-0.019562 -0.108879 0.108875" shapeId="16" clipDistance="40" nodeId="213" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="15"/>
+                    <Shape name="colPart08" translation="0.006403 0.026756 -0.002386" rotation="0 -1.6e-05 -0.230287" shapeId="10" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="214" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+                    <Shape name="colPart09" translation="0.113686 0.097407 -0.002386" rotation="0 -1.6e-05 -0.230287" shapeId="11" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="215" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+                  </TransformGroup>
+                </TransformGroup>
+                <Shape name="hdht52_decals" translation="0.032495 -0.094574 0.022937" shapeId="17" clipDistance="40" nodeId="216" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="15"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="mountingPart04Rot" translation="0.680259 0.612764 -6.33225" nodeId="217">
+              <TransformGroup name="mountingPart04" translation="0 0 -1.49074" clipDistance="300" nodeId="218">
+                <TransformGroup name="mountingPart04PartRot" translation="0.152812 0.071801 0.009398" rotation="0 1.6e-05 -17" nodeId="219">
+                  <TransformGroup name="mountingPart04Part" translation="-0.203 0 0" clipDistance="300" nodeId="220">
+                    <Shape name="hdht52_decals" translation="0.003063 -0.109119 0.11212" shapeId="18" clipDistance="40" nodeId="221" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="15"/>
+                    <Shape name="colPart10" translation="0.113686 0.097406 0.002045" rotation="0 -1.6e-05 -0.230287" shapeId="11" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="222" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+                    <Shape name="colPart11" translation="0.006403 0.026756 0.002045" rotation="0 -1.6e-05 -0.230287" shapeId="10" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="223" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+                  </TransformGroup>
+                </TransformGroup>
+                <Shape name="hdht52_decals" translation="0.033007 -0.101515 0.022327" shapeId="19" clipDistance="40" nodeId="224" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="15"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="frameExtensionBack" translation="-0.581776 0.932598 -8.71784" clipDistance="300" nodeId="225">
+              <Shape name="hdht52_decals" translation="-0.000777 0.000151 0.513986" shapeId="20" clipDistance="80" nodeId="226" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="16,16,16,15"/>
+              <Shape name="frameExtensionBack_col" shapeId="21" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="227" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="johnDeereHD45X" translation="-0.215146 0.852448 -1.38438" rotation="-26 -90 0" nodeId="228"/>
+          <TransformGroup name="johnDeereHD50F" translation="-0.268358 0.879497 -1.64" rotation="-22 -90 0" nodeId="229"/>
+          <TransformGroup name="claasConvioFlex1380" translation="-0.018853 0.786281 -0.984731" rotation="-3 -90 0" nodeId="230"/>
+          <TransformGroup name="macDonFD250" translation="0.253192 0.464231 -1.50994" rotation="-29 -90 0" nodeId="231"/>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="232">
+          <Shape name="hdht52_decals" translation="-0.001994 0.700874 -0.000834" shapeId="22" clipDistance="80" nodeId="233" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="16,16,15,17"/>
+          <Shape name="hdht52_decals1" translation="-0.532942 0.916661 5.8625" shapeId="23" clipDistance="80" nodeId="234" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="17"/>
+          <Shape name="hdht52_decals2" translation="-0.629512 0.545613 -8.01229" shapeId="24" clipDistance="80" nodeId="235" castsShadows="false" receiveShadows="true" materialIds="16,16"/>
+          <TransformGroup name="licensePlateBack" translation="-0.433093 0.606241 -8.01195" rotation="0 180 0" nodeId="236"/>
+        </TransformGroup>
+        <TransformGroup name="componentJointDrawbarYRot" translation="-1.5e-05 0.733437 7.47846" nodeId="237"/>
+        <TransformGroup name="root_joint" nodeId="238"/>
+      </Shape>
+      <TransformGroup name="skinnedMeshes" nodeId="239">
+        <Shape name="hoses" shapeId="25" clipDistance="300" nodeId="240" castsShadows="true" receiveShadows="true" skinBindNodeIds="238 189 184" materialIds="13"/>
+      </TransformGroup>
+      <TransformGroup name="collisions" translation="0 0.482311 0" nodeId="241">
+        <Shape name="colPart01" translation="0 0.462554 7.20479" shapeId="26" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="242" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="colPart02" translation="-0.058155 0.317345 -0.748596" rotation="0 0 0.106412" shapeId="27" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="243" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="colPart03" translation="0 0.11592 -7.97088" shapeId="28" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="244" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+    </Shape>
+    <Shape name="hdht52_drawbarYRot_component2" translation="0 0.561643 7.54033" shapeId="29" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" clipDistance="300" nodeId="245" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <TransformGroup name="componentJointDrawbarXRot" translation="-1.5e-05 0.171793 -0.061865" nodeId="246"/>
+      <TransformGroup name="wheelLeftFront" translation="0.32701 -0.283934 -0.037121" nodeId="247"/>
+      <TransformGroup name="wheelRightFront" translation="-0.32704 -0.283934 -0.037121" nodeId="248"/>
+      <TransformGroup name="drawbarYRotRef" translation="-1.5e-05 0.171793 9.93813" nodeId="249"/>
+    </Shape>
+    <Shape name="hdht52_drawbarXRot_component3" translation="0.012685 0.577575 8.81787" shapeId="30" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" clipDistance="300" nodeId="250" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6">
+      <TransformGroup name="attacherJoint" translation="-0.011788 -0.003161 1.28025" rotation="0 90 0" nodeId="251"/>
+      <TransformGroup name="drawbarXRotRef" translation="-0.012685 -0.006175 8.80983" nodeId="252"/>
+    </Shape>
+  </Scene>
+
+</i3D>

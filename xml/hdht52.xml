@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="dynamicMountAttacherTrailer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>            <en>HDHT 52</en>
+        </name>
+        <specs>
+            <combination xmlFilename="$data/vehicles/johnDeere/headerHD50F/headerHD50F.xml"/>
+            <combination xmlFilename="$data/vehicles/macDon/fd250/fd250.xml"/>
+            <combination xmlFilename="$data/vehicles/caseIH/fd250/fd250.xml"/>
+            <combination xmlFilename="$data/vehicles/newHolland/fd250/fd250.xml"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_cutterTrailer</function>
+        </functions>
+        <image>store/store_hdht52.dds</image>
+        <price>30000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>Thunderfarming</brand>
+        <category>cutterTrailers</category>
+        <shopTranslationOffset>0 0.083 0</shopTranslationOffset>
+        <shopRotationOffset>-0.1 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>528128</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>155904</indexBufferMemoryUsage>
+        <textureMemoryUsage>655360</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_typeDesc_cutterTrailer</typeDesc>
+        <filename>i3d/hdht52.i3d</filename>
+        <size width="2.65" length="19.45" height="1.15" lengthOffset="0.4"/>
+        <components>
+            <component centerOfMass="0 0.4 -1" solverIterationCount="30" mass="850"/>
+            <component centerOfMass="0 -0.2 -0.65" solverIterationCount="30" mass="750" inertiaScale="2 2 2"/>
+            <component centerOfMass="0 0 -0.7" solverIterationCount="30" mass="350"/>
+            <joint component1="1" component2="2" node="componentJointDrawbarYRot" rotLimit="0 115 0" transLimit="0 0 0"/>
+            <joint component1="2" component2="3" node="componentJointDrawbarXRot" rotLimit="0 0 0" transLimit="0 0 0"/>
+            <collisionPair component1="1" component2="3"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT"/>
+        <mapHotspot type="TOOL_TRAILED"/>
+    </base>
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="TRELLEBORG" saveId="TRELLEBORG_DEFAULT">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/260_70R15_3.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.7" repr="wheelLeftFront" useReprDirection="true" forcePointRatio="0.15" initialCompression="10" suspTravel="0.06" spring="98" damper="30" yOffset="0.02" frictionScale="3.5"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/260_70R15_3.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.7" repr="wheelRightFront" useReprDirection="true" forcePointRatio="0.15" initialCompression="10" suspTravel="0.06" spring="98" damper="30" yOffset="0.02" frictionScale="3.5"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/260_70R15_3.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.2" repr="wheelLeftMiddle" useReprDirection="true" forcePointRatio="0.15" initialCompression="08" suspTravel="0.06" spring="30" damper="30" yOffset="0.02"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/260_70R15_3.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.2" repr="wheelRightMiddle" useReprDirection="true" forcePointRatio="0.15" initialCompression="08" suspTravel="0.06" spring="30" damper="30" yOffset="0.02"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/260_70R15_3.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.2" repr="wheelLeftBack" useReprDirection="true" forcePointRatio="0.15" initialCompression="08" suspTravel="0.06" spring="30" damper="30" yOffset="0.0235"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/260_70R15_3.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.2" repr="wheelRightBack" useReprDirection="true" forcePointRatio="0.15" initialCompression="08" suspTravel="0.06" spring="30" damper="30" yOffset="0.0235"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <hubs>
+            <hub linkNode="wheelLeftFront" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.12 0.20 0.20"/>
+            <hub linkNode="wheelRightFront" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.12 0.20 0.20"/>
+            <hub linkNode="wheelLeftMiddle" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.12 0.20 0.20"/>
+            <hub linkNode="wheelRightMiddle" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.12 0.20 0.20"/>
+            <hub linkNode="wheelLeftBack" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.12 0.20 0.20"/>
+            <hub linkNode="wheelRightBack" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.12 0.20 0.20"/>
+        </hubs>
+    </wheels>
+    <speedRotatingParts>
+        <speedRotatingPart node="wheelLeftFrontPart" wheelIndex="1"/>
+        <speedRotatingPart node="wheelRightFrontPart" wheelIndex="2"/>
+    </speedRotatingParts>
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="trailer" rootNode="hdht52_drawbarXRot_component3" attacherHeight="0.7"/>
+        </inputAttacherJoints>
+        <support animationName="lockDrawbarLimit"/>
+        <brakeForce force="0.1"/>
+    </attachable>
+    <licensePlates>
+        <licensePlate node="licensePlateBack" position="BACK" preferedType="ELONGATED" placementArea="0.12 0.27 0.27 0.26"/>
+    </licensePlates>
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="electric" node="electric" length="1.1" diameter="0.02" straighteningFactor="0.2" adapterNode="electric_connector">
+            <objectChange node="electric_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+    </connectionHoses>
+    <lights>
+        <sharedLight linkNode="rearLight23Red_01" filename="$data/shared/assets/lights/lizard/rearLight23Red_left.xml"/>
+        <sharedLight linkNode="rearLight23Red_02" filename="$data/shared/assets/lights/lizard/rearLight23Red_right.xml"/>
+        <sharedLight linkNode="rearLight26Red_01" filename="$data/shared/assets/lights/lizard/rearLight26Red.xml"/>
+        <sharedLight linkNode="rearLight26Red_02" filename="$data/shared/assets/lights/lizard/rearLight26Red.xml"/>
+        <sharedLight linkNode="rearLight26Red_03" filename="$data/shared/assets/lights/lizard/rearLight26Red.xml"/>
+        <sharedLight linkNode="plateNumberLight02" filename="$data/shared/assets/lights/lizard/plateNumberLight02.xml"/>
+        <realLights>
+            <high>
+                <light node="backLightsHigh" lightTypes="0"/>
+                <light node="licensePlateLightHigh" lightTypes="0"/>
+                <brakeLight node="backLightsHigh"/>
+            </high>
+        </realLights>
+        <staticLightCompounds>
+            <staticLightCompound>
+                <node node="backLights_static" intensity="5"/>
+                <node node="backLightsGlass_static" intensity="1"/>
+                <function name="TURN_LIGHT_LEFT" uvSlotIndex="1" uvOffset="14"/>
+                <function name="BACK_LIGHT" uvSlotIndex="1"/>
+                <function name="TURN_LIGHT_RIGHT" uvSlotIndex="2" uvOffset="14"/>
+                <function name="BACK_LIGHT" uvSlotIndex="2"/>
+            </staticLightCompound>
+        </staticLightCompounds>
+    </lights>
+    <dynamicMountAttacher triggerNode="dynamicMountTrigger" rootNode="hdht52_main_component1" jointNode="hdht52_main_component1" forceAcceleration="500" mountType="TYPE_AUTO_ATTACH_XZ" transferMass="true">
+        <lockPosition xmlFilename="$data/vehicles/claas/convioFlex1380/convioFlex1380.xml" jointNode="claasConvioFlex1380">
+            <objectChange node="mountingPart01" translationActive="0 0 1.107"/>
+            <objectChange node="mountingPart01Part" translationActive="-0.252 0 0"/>
+            <objectChange node="mountingPart02" translationActive="0 0 0.515"/>
+            <objectChange node="mountingPart02Part" translationActive="0 0 0"/>
+            <objectChange node="mountingPart03" translationActive="0 0 -0.316"/>
+            <objectChange node="mountingPart03Part" translationActive="0 0 0"/>
+            <objectChange node="mountingPart04" translationActive="0 0 -0.619"/>
+            <objectChange node="mountingPart04Part" translationActive="-0.252 0 0"/>
+            <objectChange node="frameExtensionBack" visibilityActive="false" visibilityInactive="true"/>
+            <objectChange node="frameExtensionBack_col" translationActive="0 0 1.069"/>
+        </lockPosition>
+        <lockPosition xmlFilename="$data/vehicles/johnDeere/headerHD45X/headerHD45X.xml" jointNode="johnDeereHD45X">
+            <objectChange node="mountingPart01" translationActive="0 0 1.373"/>
+            <objectChange node="mountingPart01Part" translationActive="-0.052 0 0"/>
+            <objectChange node="mountingPart02" translationActive="0 0 1.732"/>
+            <objectChange node="mountingPart02Part" translationActive="-0.052 0 0"/>
+            <objectChange node="mountingPart03" translationActive="0 0 -2.325"/>
+            <objectChange node="mountingPart03Part" translationActive="-0.052 0 0"/>
+            <objectChange node="mountingPart04" translationActive="0 0 -1.414"/>
+            <objectChange node="mountingPart04Part" translationActive="-0.052 0 0"/>
+            <objectChange node="frameExtensionBack" visibilityActive="false" visibilityInactive="true"/>
+            <objectChange node="frameExtensionBack_col" translationActive="0 0 1.069"/>
+        </lockPosition>
+        <lockPosition xmlFilename="$data/vehicles/johnDeere/headerHD50F/headerHD50F.xml" jointNode="johnDeereHD50F">
+            <objectChange node="mountingPart01" translationActive="0 0 1.879"/>
+            <objectChange node="mountingPart01Part" translationActive="-0.203 0 0"/>
+            <objectChange node="mountingPart02" translationActive="0 0 1.475"/>
+            <objectChange node="mountingPart02Part" translationActive="-0.203 0 0"/>
+            <objectChange node="mountingPart03" translationActive="0 0 -2.874"/>
+            <objectChange node="mountingPart03Part" translationActive="-0.203 0 0"/>
+            <objectChange node="mountingPart04" translationActive="0 0 -1.343"/>
+            <objectChange node="mountingPart04Part" translationActive="-0.254 0 0"/>
+        </lockPosition>
+
+        <lockPosition xmlFilename="xml/HD50F.xml" jointNode="johnDeereHD50F">
+            <objectChange node="mountingPart01" translationActive="0 0 1.879"/>
+            <objectChange node="mountingPart01Part" translationActive="-0.203 0 0"/>
+            <objectChange node="mountingPart02" translationActive="0 0 1.475"/>
+            <objectChange node="mountingPart02Part" translationActive="-0.203 0 0"/>
+            <objectChange node="mountingPart03" translationActive="0 0 -2.874"/>
+            <objectChange node="mountingPart03Part" translationActive="-0.203 0 0"/>
+            <objectChange node="mountingPart04" translationActive="0 0 -1.343"/>
+            <objectChange node="mountingPart04Part" translationActive="-0.254 0 0"/>
+        </lockPosition>
+
+        <lockPosition xmlFilename="$data/vehicles/newHolland/fd250/fd250.xml" jointNode="macDonFD250">
+            <objectChange node="mountingPart01" translationActive="0 0 1.879"/>
+            <objectChange node="mountingPart01Part" translationActive="-0.052 0 0"/>
+            <objectChange node="mountingPart02" translationActive="0 0 1.475"/>
+            <objectChange node="mountingPart02Part" translationActive="-0.052 0 0"/>
+            <objectChange node="mountingPart03" translationActive="0 0 -2.315"/>
+            <objectChange node="mountingPart03Part" translationActive="-0.052 0 0"/>
+            <objectChange node="mountingPart04" translationActive="0 0 -1.343"/>
+            <objectChange node="mountingPart04Part" translationActive="-0.052 0 0"/>
+        </lockPosition>
+        <lockPosition xmlFilename="$data/vehicles/caseIH/fd250/fd250.xml" jointNode="macDonFD250">
+            <objectChange node="mountingPart01" translationActive="0 0 1.879"/>
+            <objectChange node="mountingPart01Part" translationActive="-0.052 0 0"/>
+            <objectChange node="mountingPart02" translationActive="0 0 1.475"/>
+            <objectChange node="mountingPart02Part" translationActive="-0.052 0 0"/>
+            <objectChange node="mountingPart03" translationActive="0 0 -2.315"/>
+            <objectChange node="mountingPart03Part" translationActive="-0.052 0 0"/>
+            <objectChange node="mountingPart04" translationActive="0 0 -1.343"/>
+            <objectChange node="mountingPart04Part" translationActive="-0.052 0 0"/>
+        </lockPosition>
+        <lockPosition xmlFilename="$data/vehicles/macDon/fd250/fd250.xml" jointNode="macDonFD250">
+            <objectChange node="mountingPart01" translationActive="0 0 1.879"/>
+            <objectChange node="mountingPart01Part" translationActive="-0.052 0 0"/>
+            <objectChange node="mountingPart02" translationActive="0 0 1.475"/>
+            <objectChange node="mountingPart02Part" translationActive="-0.052 0 0"/>
+            <objectChange node="mountingPart03" translationActive="0 0 -2.315"/>
+            <objectChange node="mountingPart03Part" translationActive="-0.052 0 0"/>
+            <objectChange node="mountingPart04" translationActive="0 0 -1.343"/>
+            <objectChange node="mountingPart04Part" translationActive="-0.052 0 0"/>
+        </lockPosition>
+    </dynamicMountAttacher>
+    <animations>
+        <animation name="lockDrawbarLimit">
+            <part componentJointIndex="2" startTime="0.0" endTime="0.1" startRotLimit="60 0 0" endRotLimit="0 0 0"/>
+        </animation>
+    </animations>
+    <cylindered>
+        <movingParts>
+            <movingPart node="drawbarYRot" referencePoint="drawbarYRotRef" referenceFrame="drawbarYRotRefFrame" isActiveDirty="true" maxUpdateDistance="300" limitedAxis="2">
+                <dependentPart node="drawbarXRot"/>
+            </movingPart>
+            <movingPart node="drawbarXRot" referencePoint="drawbarXRotRef" referenceFrame="drawbarXRotRefFrame" limitedAxis="1"/>
+        </movingParts>
+    </cylindered>
+    <ai>
+        <agentAttachment jointNode="componentJointDrawbarYRot" rotCenterWheelIndices="1 2" width="1" height="2" length="2.1" lengthOffset="0.55" hasCollision="false"/>
+        <agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="3 4 5 6" width="2.65" height="2" length="16.3" lengthOffset="3.2"/>
+    </ai>
+    <foliageBending>
+        <bendingNode minX="-0.8" maxX="1.1" minZ="-9.3" maxZ="6.7" yOffset="0.4"/>
+        <bendingNode minX="-1.35" maxX="1.35" minZ="-5.8" maxZ="-3" yOffset="0.4"/>
+        <bendingNode minX="-0.5" maxX="0.5" minZ="-1.45" maxZ="-0.15" yOffset="-0.17" node="hdht52_drawbarYRot_component2"/>
+        <bendingNode minX="-0.1" maxX="0.1" minZ="-0.15" maxZ="1.8" yOffset="-0.1" node="hdht52_drawbarYRot_component2"/>
+    </foliageBending>
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+
+    <baseColorConfigurations useDefaultColors="true" defaultColorMaterialTemplateName="calibratedMetallicPaint" title="Gestell">
+        <baseColorConfiguration name="Thunderfarming Black" color="0 0 0" isDefault="true" />
+        <material materialSlotName="Gestell" />
+    </baseColorConfigurations>
+
+    <rimColorConfigurations useDefaultColors="true">
+        <rimColorConfiguration materialTemplateName="FENDT_RED1" />
+        <rimColorConfiguration materialTemplateName="RIM_CONFIGURATION_BLACK" />
+    </rimColorConfigurations>
+
+    <i3dMappings>
+        <i3dMapping id="hdht52_main_component1" node="0>"/>
+        <i3dMapping id="hdht52_vis" node="0>0"/>
+        <i3dMapping id="wheelLeftMiddle" node="0>0|0|0"/>
+        <i3dMapping id="wheelLeftMiddlePart" node="0>0|0|0|0"/>
+        <i3dMapping id="wheelRightMiddle" node="0>0|0|1"/>
+        <i3dMapping id="wheelRightMiddlePart" node="0>0|0|1|0"/>
+        <i3dMapping id="wheelLeftBack" node="0>0|0|2"/>
+        <i3dMapping id="wheelLeftBackPart" node="0>0|0|2|0"/>
+        <i3dMapping id="wheelRightBack" node="0>0|0|3"/>
+        <i3dMapping id="wheelRightBackPart" node="0>0|0|3|0"/>
+        <i3dMapping id="rearLight23Red_01" node="0>0|1|0|0"/>
+        <i3dMapping id="rearLight23Red_02" node="0>0|1|0|1"/>
+        <i3dMapping id="rearLight26Red_01" node="0>0|1|0|2"/>
+        <i3dMapping id="rearLight26Red_02" node="0>0|1|0|3"/>
+        <i3dMapping id="rearLight26Red_03" node="0>0|1|0|4"/>
+        <i3dMapping id="plateNumberLight02" node="0>0|1|0|5"/>
+        <i3dMapping id="backLights_static" node="0>0|1|1|0"/>
+        <i3dMapping id="backLightsGlass_static" node="0>0|1|1|1"/>
+        <i3dMapping id="licensePlateLightHigh" node="0>0|1|2|0"/>
+        <i3dMapping id="backLightsHigh" node="0>0|1|3|0"/>
+        <i3dMapping id="drawbarYRotRefFrame" node="0>0|2|0"/>
+        <i3dMapping id="drawbarYRot" node="0>0|2|0|0"/>
+        <i3dMapping id="drawbarXRotRefFrame" node="0>0|2|0|0|0"/>
+        <i3dMapping id="drawbarXRot" node="0>0|2|0|0|0|0"/>
+        <i3dMapping id="electric" node="0>0|2|0|0|0|0|0|0"/>
+        <i3dMapping id="electric_detached" node="0>0|2|0|0|0|0|0|0|0"/>
+        <i3dMapping id="electric_connector" node="0>0|2|0|0|0|0|0|0|0|0"/>
+        <i3dMapping id="wheelLeftFrontPart" node="0>0|2|0|0|1|0"/>
+        <i3dMapping id="wheelRightFrontPart" node="0>0|2|0|0|1|1"/>
+        <i3dMapping id="dynamicMountTrigger" node="0>0|3|0"/>
+        <i3dMapping id="mountingPart01" node="0>0|3|1|0|0"/>
+        <i3dMapping id="mountingPart01Part" node="0>0|3|1|0|0|0|0"/>
+        <i3dMapping id="mountingPart02" node="0>0|3|1|1|0"/>
+        <i3dMapping id="mountingPart02Part" node="0>0|3|1|1|0|0|0"/>
+        <i3dMapping id="mountingPart03" node="0>0|3|1|2|0"/>
+        <i3dMapping id="mountingPart03Part" node="0>0|3|1|2|0|0|0"/>
+        <i3dMapping id="mountingPart04" node="0>0|3|1|3|0"/>
+        <i3dMapping id="mountingPart04Part" node="0>0|3|1|3|0|0|0"/>
+        <i3dMapping id="frameExtensionBack" node="0>0|3|1|4"/>
+        <i3dMapping id="frameExtensionBack_col" node="0>0|3|1|4|1"/>
+        <i3dMapping id="johnDeereHD45X" node="0>0|3|2"/>
+        <i3dMapping id="johnDeereHD50F" node="0>0|3|3"/>
+        <i3dMapping id="claasConvioFlex1380" node="0>0|3|4"/>
+        <i3dMapping id="macDonFD250" node="0>0|3|5"/>
+        <i3dMapping id="licensePlateBack" node="0>0|4|3"/>
+        <i3dMapping id="componentJointDrawbarYRot" node="0>0|5"/>
+        <i3dMapping id="colPart01" node="0>2|0"/>
+        <i3dMapping id="hdht52_drawbarYRot_component2" node="1>"/>
+        <i3dMapping id="componentJointDrawbarXRot" node="1>0"/>
+        <i3dMapping id="wheelLeftFront" node="1>1"/>
+        <i3dMapping id="wheelRightFront" node="1>2"/>
+        <i3dMapping id="drawbarYRotRef" node="1>3"/>
+        <i3dMapping id="hdht52_drawbarXRot_component3" node="2>"/>
+        <i3dMapping id="attacherJoint" node="2>0"/>
+        <i3dMapping id="drawbarXRotRef" node="2>1"/>
+    </i3dMappings>
+</vehicle>
