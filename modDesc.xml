@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="96">
+  <author>Leo</author>
+  <version>1.0.0.0</version>
+  <title>
+    <en>Thunderfarming X9 Pack</en>
+  </title>
+  <description>
+    <en><![CDATA[
+Category: Grain Headers
+Price: $144,500
+Working width: 15.2m
+Working speed: 15 kph
+]]></en>
+    <de><![CDATA[
+Shopkategorie: Getreideschneidwerke
+Preis: 144.500€
+Arbeitsbreite: 15,2m
+Arbeitsgeschwindigkeit: 15 km/h
+]]></de>
+  </description>
+  <iconFilename>store/icon_seriesX9.dds</iconFilename>
+  <storeItems>
+    <storeItem xmlFilename="xml/HD50F.xml" />
+	<storeItem xmlFilename="xml/seriesX9.xml" />
+	<storeItem xmlFilename="xml/C16F.xml" />
+  </storeItems>
+  <brands>
+    <brand title="Thunderfarming" image="brand/brand_ThF.dds" name="Thunderfarming" />
+  </brands>
+  <multiplayer supported="true" />
+  <site link="" title="" />
+</modDesc>

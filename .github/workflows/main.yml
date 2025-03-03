@@ -1,0 +1,24 @@
+name: Releases
+
+on: 
+  push:
+    tags:
+    - 'v*.*.*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@master
+    - name: Archive Release
+      uses: thedoctor0/zip-release@0.7.6
+      with:
+        type: 'zip'
+        filename: 'LS25_Thunderfarming_X9_Pack.zip'
+        exclusions: '/.git* .git* README.md'
+    - name: Upload Release
+      uses: ncipollo/release-action@v1.12.0
+      with:
+        artifacts: "LS25_Thunderfarming_X9_Pack.zip"
+        allowUpdates: true
