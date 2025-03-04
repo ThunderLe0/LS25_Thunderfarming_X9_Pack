@@ -6,6 +6,7 @@
         </name>
         <specs>
             <combination xmlFilename="$data/vehicles/johnDeere/headerHD50F/headerHD50F.xml"/>
+			<combination xmlFilename="xml/HD50F.xml"/>
             <combination xmlFilename="$data/vehicles/macDon/fd250/fd250.xml"/>
             <combination xmlFilename="$data/vehicles/caseIH/fd250/fd250.xml"/>
             <combination xmlFilename="$data/vehicles/newHolland/fd250/fd250.xml"/>

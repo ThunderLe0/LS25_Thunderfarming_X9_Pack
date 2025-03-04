@@ -1730,6 +1730,7 @@
         <TransformGroup name="axisBackJoint" rotation="0 -22.6024 0" nodeId="945"/>
       </TransformGroup>
     </Shape>
+    <Camera name="camera" translation="5.77035 5.28135 -7.74279" rotation="165.332 68.8451 -180" nodeId="946" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
   </Scene>
 
   <UserAttributes>
