@@ -18,7 +18,7 @@ jobs:
       with:        
         type: 'zip'
         filename: '${{env.REPO_NAME}}.zip'
-        exclusions: '/.git* .git* README.md'
+        exclusions: '/.git* .git* README.md store/*.png'
     - name: Upload Release
       uses: ncipollo/release-action@v1.16.0
       env:
