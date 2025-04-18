@@ -1,22 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="96">
+<modDesc descVersion="97">
   <author>Leo</author>
-  <version>0.0.0.1</version>
+  <version>1.0.0.1</version>
   <title>
     <en>Thunderfarming X9 Pack</en>
   </title>
   <description>
     <en><![CDATA[
+Thunderfarming HD50F
 Category: Grain Headers
 Price: $144,500
 Working width: 15.2m
 Working speed: 15 kph
+
+Thunderfarming X9 1100
+Category: Harvesters
+Price: $744,500
+Power: 690 hp
+Max. speed: 40 kph
+Capacity: 22,300 L
+Capacity: 1,250 L
+
+Thunderfarming C16F
+Category: Corn Headers
+Price: $144,000
+Working width: 12.0m
+Working speed: 15 kph
+
+Thunderfarming HDHT 52
+Category: Header Trailers
+Price: $30,000
 ]]></en>
     <de><![CDATA[
+Thunderfarming HD50F
 Shopkategorie: Getreideschneidwerke
 Preis: 144.500€
 Arbeitsbreite: 15,2m
 Arbeitsgeschwindigkeit: 15 km/h
+
+Thunderfarming X9 1100
+Shopkategorie: Mähdrescher
+Preis: 744.500€
+Leistung: 690 PS
+Höchstgeschwindigkeit: 40 km/h
+Kapazität: 22.300 L
+Kapazität: 1.250 L
+
+Thunderfarming C16F
+Shopkategorie: Maispflücker
+Preis: 144.000€
+Arbeitsbreite: 12,0m
+Arbeitsgeschwindigkeit: 15 km/h
+
+Thunderfarming HDHT 52
+Shopkategorie: Schneidwerkswagen
+Preis: 30.000€
 ]]></de>
   </description>
   <iconFilename>store/icon_seriesX9.dds</iconFilename>

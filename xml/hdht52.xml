@@ -22,12 +22,6 @@
         <category>cutterTrailers</category>
         <shopTranslationOffset>0 0.083 0</shopTranslationOffset>
         <shopRotationOffset>-0.1 0 0</shopRotationOffset>
-        <vertexBufferMemoryUsage>528128</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>155904</indexBufferMemoryUsage>
-        <textureMemoryUsage>655360</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
     <base>
         <typeDesc>$l10n_typeDesc_cutterTrailer</typeDesc>

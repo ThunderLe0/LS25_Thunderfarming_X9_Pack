@@ -9,6 +9,8 @@
             <combination xmlFilename="$data/vehicles/johnDeere/seriesS7/seriesS7.xml"/>
             <combination xmlFilename="$data/vehicles/johnDeere/seriesX9/seriesX9.xml"/>
             <combination xmlFilename="$data/vehicles/demco/hdht52/hdht52.xml"/>
+			<combination xmlFilename="xml/hdht52.xml"/>
+			<combination xmlFilename="xml/seriesX9.xml"/>
         </specs>
         <functions>
             <function>$l10n_function_cutter</function>
@@ -21,12 +23,6 @@
         <category>cutters</category>
         <shopTranslationOffset>0 -0.036 0</shopTranslationOffset>
         <shopRotationOffset>-3.658 0 0</shopRotationOffset>
-        <vertexBufferMemoryUsage>3983360</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>1530368</indexBufferMemoryUsage>
-        <textureMemoryUsage>1572864</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
     <base>
         <typeDesc>$l10n_typeDesc_cutter</typeDesc>

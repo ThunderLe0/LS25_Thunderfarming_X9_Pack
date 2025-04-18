@@ -6,7 +6,7 @@
             <en>X9 1100</en></name>
         <specs>
             <power>690</power>
-            <maxSpeed>40</maxSpeed>
+            <maxSpeed>50</maxSpeed>
             <combination xmlFilename="$data/vehicles/johnDeere/headerHD45X/headerHD45X.xml"/>
             <combination xmlFilename="$data/vehicles/johnDeere/headerHD50F/headerHD50F.xml"/>
             <combination xmlFilename="$data/vehicles/johnDeere/headerC16F/headerC16F.xml"/>
@@ -15,6 +15,9 @@
             <combination xmlFilename="$data/vehicles/geringhoff/sunLite40/sunLite40.xml"/>
             <combination xmlFilename="$data/vehicles/geringhoff/miloStar1630/miloStar1630.xml"/>
             <combination xmlFilename="$data/vehicles/geringhoff/northStar1830/northStar1830.xml"/>
+			<combination xmlFilename="$data/vehicles/geringhoff/northStar1830/northStar1830.xml"/>
+			<combination xmlFilename="xml/C16F.xml"/>
+			<combination xmlFilename="xml/HD50F.xml"/>
         </specs>
         <functions>
             <function>$l10n_function_combine</function>
@@ -29,12 +32,6 @@
         <shopFoldingState>1</shopFoldingState>
         <shopTranslationOffset>0 -0.094 0</shopTranslationOffset>
         <shopRotationOffset>0.645 0 0</shopRotationOffset>
-        <vertexBufferMemoryUsage>6245888</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>1591808</indexBufferMemoryUsage>
-        <textureMemoryUsage>2097152</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
-        <audioMemoryUsage>520984</audioMemoryUsage>
     </storeData>
     <base>
         <typeDesc>$l10n_typeDesc_combine</typeDesc>
@@ -85,8 +82,8 @@
                     </wheel>
                 </wheels>
                 <crawlers>
-                    <crawler filename="$data/shared/crawlers/johnDeere/seriesX9Crawler/seriesX9Crawler_eu.xml" linkWheelNodes="trackLeftBackWheel trackLeftFrontWheel" isLeft="true" trackWidth="1"/>
-                    <crawler filename="$data/shared/crawlers/johnDeere/seriesX9Crawler/seriesX9Crawler_eu.xml" linkWheelNodes="trackRightBackWheel trackRightFrontWheel" isLeft="false" trackWidth="1"/>
+                    <crawler filename="xml/seriesX9Crawler_eu.xml" linkWheelNodes="trackLeftBackWheel trackLeftFrontWheel" isLeft="true" trackWidth="1"/>
+                    <crawler filename="xml/seriesX9Crawler_eu.xml" linkWheelNodes="trackRightBackWheel trackRightFrontWheel" isLeft="false" trackWidth="1"/>
                 </crawlers>
                 <objectChange node="config_eu" visibilityActive="true" visibilityInactive="false"/>
                 <objectChange node="config_lights_eu" visibilityActive="true" visibilityInactive="false"/>
@@ -124,8 +121,8 @@
                     </wheel>
                 </wheels>
                 <crawlers>
-                    <crawler filename="$data/shared/crawlers/johnDeere/seriesX9Crawler/seriesX9Crawler_us.xml" linkWheelNodes="trackLeftBackWheel trackLeftFrontWheel" isLeft="true" trackWidth="1"/>
-                    <crawler filename="$data/shared/crawlers/johnDeere/seriesX9Crawler/seriesX9Crawler_us.xml" linkWheelNodes="trackRightBackWheel trackRightFrontWheel" isLeft="false" trackWidth="1"/>
+                    <crawler filename="xml/seriesX9Crawler_us.xml" linkWheelNodes="trackLeftBackWheel trackLeftFrontWheel" isLeft="true" trackWidth="1"/>
+                    <crawler filename="xml/seriesX9Crawler_us.xml" linkWheelNodes="trackRightBackWheel trackRightFrontWheel" isLeft="false" trackWidth="1"/>
                 </crawlers>
                 <objectChange node="config_us" visibilityActive="true" visibilityInactive="false"/>
                 <objectChange node="config_lights_us" visibilityActive="true" visibilityInactive="false"/>
@@ -850,6 +847,7 @@
         <material materialSlotName="seriesX9B_plasticGraniteGrainSmallBlack_mat" />
         <material materialSlotName="seriesX9B_metalPaintedBlack_mat" />
         <material materialSlotName="seriesX9B_plasticPaintedGray_mat" />
+		<material materialSlotName="seriesX9CrawlerA_JOHNDEERE_GREEN1_mat" />
     </designColorConfigurations>
 	<rimColorConfigurations useDefaultColors="true" defaultColorMaterialTemplateName="calibratedMetallicPaint">
         <rimColorConfiguration color="0.0 0.0 0.0" name="Thunderfarming Black" isDefault="true" />

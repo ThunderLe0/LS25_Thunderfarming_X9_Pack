@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="seriesX9Crawler.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="14" filename="$data/shaders/tireMudShader.xml"/>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="24" filename="$data/shared/crawlers/johnDeere/seriesX9Crawler/seriesX9CrawlerA_normal.png"/>
+    <File fileId="17" filename="$data/shared/crawlers/johnDeere/seriesX9Crawler/seriesX9CrawlerA_vmask.png"/>
+    <File fileId="2" filename="$data/shared/crawlers/johnDeere/seriesX9Crawler/seriesX9CrawlerB_normal.png"/>
+    <File fileId="3" filename="$data/shared/crawlers/johnDeere/seriesX9Crawler/seriesX9CrawlerB_vmask.png"/>
+    <File fileId="15" filename="$data/shared/crawlers/johnDeere/seriesX9Crawler/seriesX9CrawlerDecal_diffuse.png"/>
+    <File fileId="16" filename="$data/shared/crawlers/johnDeere/seriesX9Crawler/seriesX9CrawlerDecal_normal.png"/>
+    <File fileId="12" filename="$data/shared/crawlers/johnDeere/seriesX9Crawler/seriesX9CrawlerTrackArray.png"/>
+    <File fileId="20" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png"/>
+    <File fileId="19" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_normal.png"/>
+    <File fileId="18" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png"/>
+    <File fileId="26" filename="$data/shared/detailLibrary/calibrated/castIron_normal.png"/>
+    <File fileId="25" filename="$data/shared/detailLibrary/calibrated/castIron_specular.png"/>
+    <File fileId="22" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="27" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+    <File fileId="23" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="21" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="10" filename="$data/shared/detailLibrary/nonMetallic/dirt_diffuse.png"/>
+    <File fileId="8" filename="$data/shared/detailLibrary/nonMetallic/dirt_specular.png"/>
+    <File fileId="29" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="28" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/nonMetallic/mud_normal.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.png"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
+    <File fileId="1" filename="$data/shared/white_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="mud_mat" materialId="5" customShaderId="14" customShaderVariation="motionPathRubber">
+      <Texture fileId="10"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="8"/>
+      <Custommap name="trackArray" fileId="12"/>
+      <CustomParameter name="crawlerRealLength" value="6.69"/>
+    </Material>
+    <Material name="seriesX9CrawlerA_calibratedCastIron_JOHNDEERE_GREEN1_mat" materialId="15" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="detailSpecular" fileId="25"/>
+      <Custommap name="detailNormal" fileId="26"/>
+      <Custommap name="detailDiffuse" fileId="27"/>
+      <CustomParameter name="colorScale" value="0.0236 0.2133 0.027"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.1"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+    </Material>
+    <Material name="seriesX9CrawlerA_calibratedCastIron_JOHNDEERE_YELLOW1_mat" materialId="6" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="detailSpecular" fileId="25"/>
+      <Custommap name="detailNormal" fileId="26"/>
+      <Custommap name="detailDiffuse" fileId="27"/>
+      <CustomParameter name="colorScale" value="1 0.7428 0"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.1"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+    </Material>
+    <Material name="seriesX9CrawlerA_JOHNDEERE_GREEN1_mat" materialId="9" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="detailSpecular" fileId="18"/>
+      <Custommap name="detailNormal" fileId="19"/>
+      <Custommap name="detailDiffuse" fileId="20"/>
+      <CustomParameter name="colorScale" value="0.0236 0.2133 0.027"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.1"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+    </Material>
+    <Material name="seriesX9CrawlerA_metalPaintedBlack_mat" materialId="8" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="detailSpecular" fileId="28"/>
+      <Custommap name="detailNormal" fileId="22"/>
+      <Custommap name="detailDiffuse" fileId="29"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="seriesX9CrawlerA_rubberBlack_mat" materialId="7" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <CustomParameter name="porosity" value="0.5"/>
+    </Material>
+    <Material name="seriesX9CrawlerA_silverScratched_mat" materialId="10" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="detailSpecular" fileId="21"/>
+      <Custommap name="detailNormal" fileId="22"/>
+      <Custommap name="detailDiffuse" fileId="23"/>
+    </Material>
+    <Material name="seriesX9CrawlerB_rubberBlack_mat" materialId="13" customShaderId="4" customShaderVariation="motionPathRubber_vmaskUV2">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="detailSpecular" fileId="5"/>
+      <Custommap name="detailNormal" fileId="6"/>
+      <Custommap name="detailDiffuse" fileId="7"/>
+      <Custommap name="trackArray" fileId="12"/>
+      <CustomParameter name="porosity" value="0.5"/>
+    </Material>
+    <Material name="seriesX9CrawlerDecal_JCB_YELLOW1_mat" materialId="14" alphaBlending="true" customShaderId="4" customShaderVariation="vmaskUV2_normalUV3">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="detailSpecular" fileId="18"/>
+      <Custommap name="detailNormal" fileId="19"/>
+      <Custommap name="detailDiffuse" fileId="20"/>
+      <CustomParameter name="colorScale" value="1 0.7428 0"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.1"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+    </Material>
+    <Material name="seriesX9CrawlerDecal_metalPainted_mat" materialId="11" alphaBlending="true" customShaderId="4" customShaderVariation="vmaskUV2_normalUV3">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="detailSpecular" fileId="28"/>
+      <Custommap name="detailNormal" fileId="22"/>
+      <Custommap name="detailDiffuse" fileId="29"/>
+    </Material>
+    <Material name="seriesX9CrawlerDecal_silverScratched_mat" materialId="12" alphaBlending="true" customShaderId="4" customShaderVariation="vmaskUV2_normalUV3">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="detailSpecular" fileId="21"/>
+      <Custommap name="detailNormal" fileId="22"/>
+      <Custommap name="detailDiffuse" fileId="23"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="seriesX9Crawler.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="seriesX9Crawler" nodeId="39">
+      <TransformGroup name="crawlerLeft" nodeId="40">
+        <TransformGroup name="tracks" nodeId="41">
+          <Shape name="trackLeft_eu" translation="0 -0.398617 0.959628" shapeId="1" clipDistance="300" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="13">
+            <Shape name="trackLeft_eu_mudMesh" shapeId="2" clipDistance="35" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </Shape>
+          <Shape name="trackLeft_us" translation="0 -0.398617 0.959628" shapeId="3" clipDistance="300" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="13">
+            <Shape name="trackLeft_us_mudMesh" shapeId="4" clipDistance="35" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="bigWheel" translation="0.097401 0.773208 0.964563" clipDistance="300" nodeId="46">
+          <Shape name="screwTracks_Decal1" translation="0.178355 -4e-06 1.6e-05" shapeId="5" clipDistance="30" nodeId="47" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="14"/>
+        </TransformGroup>
+        <TransformGroup name="bigWheelsFront" translation="-0.003485 0 1.9715" clipDistance="300" nodeId="48">
+          <Shape name="screwTracks_Decal2" translation="-9.6e-05 0 0" shapeId="6" clipDistance="30" nodeId="49" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12"/>
+        </TransformGroup>
+        <TransformGroup name="bigWheelsBack" translation="-0.003485 0 0" clipDistance="300" nodeId="50">
+          <Shape name="screwTracks_Decal3" translation="4.3e-05 -0.00011 -0.000196" shapeId="7" clipDistance="30" nodeId="51" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12"/>
+        </TransformGroup>
+        <TransformGroup name="smallWheelFront" translation="-0.001185 -0.107535 1.41746" clipDistance="300" nodeId="52"/>
+        <TransformGroup name="smallWheelMiddle" translation="-0.001185 -0.107535 0.884498" clipDistance="300" nodeId="53"/>
+        <TransformGroup name="smallWheelBack" translation="-0.001185 -0.107535 0.490365" clipDistance="300" nodeId="54"/>
+        <TransformGroup name="visuals" translation="0 -0.398617 0.959628" nodeId="55">
+          <Shape name="crawlerLeft" translation="0 0.398617 -0.959628" shapeId="8" clipDistance="300" nodeId="56" castsShadows="true" receiveShadows="true" skinBindNodeIds="56 46 48 50 52 53 54" materialIds="10,9,15,6,7,8"/>
+          <Shape name="screwTracks_decalsConfigEU" shapeId="9" clipDistance="30" nodeId="57" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="11"/>
+          <Shape name="screwTracks_decalsConfigUS" shapeId="10" clipDistance="30" nodeId="58" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="11"/>
+          <Shape name="screwTracks_decal" shapeId="11" clipDistance="30" nodeId="59" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12,11"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="crawlerRight" nodeId="60">
+        <TransformGroup name="tracks" nodeId="61">
+          <Shape name="trackRight_eu" translation="0 -0.398617 0.959628" shapeId="12" clipDistance="300" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="13">
+            <Shape name="trackRight_eu_mudMesh" shapeId="13" clipDistance="35" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </Shape>
+          <Shape name="trackRight_us" translation="0 -0.398617 0.959628" shapeId="14" clipDistance="300" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="13">
+            <Shape name="trackRight_us_mudMesh" shapeId="15" clipDistance="35" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="bigWheel" translation="-0.097401 0.773208 0.964563" clipDistance="300" nodeId="66">
+          <Shape name="screwTracks_Decal1" translation="-0.178034 -4e-06 1.6e-05" shapeId="16" clipDistance="30" nodeId="67" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="14"/>
+        </TransformGroup>
+        <TransformGroup name="bigWheelsFront" translation="0.003485 0 1.9715" clipDistance="300" nodeId="68">
+          <Shape name="screwTracks_Decal2" translation="9.6e-05 0 0" shapeId="17" clipDistance="30" nodeId="69" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12"/>
+        </TransformGroup>
+        <TransformGroup name="bigWheelsBack" translation="0.003485 0 0" clipDistance="300" nodeId="70">
+          <Shape name="screwTracks_Decal3" translation="-4.3e-05 -0.00011 -0.000196" shapeId="18" clipDistance="30" nodeId="71" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12"/>
+        </TransformGroup>
+        <TransformGroup name="smallWheelFront" translation="0.001185 -0.107535 1.41746" clipDistance="300" nodeId="72"/>
+        <TransformGroup name="smallWheelMiddle" translation="0.001185 -0.107535 0.884498" clipDistance="300" nodeId="73"/>
+        <TransformGroup name="smallWheelBack" translation="0.001185 -0.107535 0.490365" clipDistance="300" nodeId="74"/>
+        <TransformGroup name="visuals" translation="0 -0.398617 0.959628" nodeId="75">
+          <Shape name="crawlerRight" translation="0 0.398617 -0.959628" shapeId="19" clipDistance="300" nodeId="76" castsShadows="true" receiveShadows="true" skinBindNodeIds="76 66 68 70 72 73 74" materialIds="10,9,15,6,7,8"/>
+          <Shape name="screwTracks_decalsConfigEU" shapeId="20" clipDistance="30" nodeId="77" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="11"/>
+          <Shape name="screwTracks_decalsConfigUS" shapeId="21" clipDistance="30" nodeId="78" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="11"/>
+          <Shape name="screwTracks_decal" shapeId="22" clipDistance="30" nodeId="79" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="12,11"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>
