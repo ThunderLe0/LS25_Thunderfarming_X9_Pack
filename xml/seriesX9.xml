@@ -847,7 +847,7 @@
         <material materialSlotName="seriesX9B_plasticGraniteGrainSmallBlack_mat" />
         <material materialSlotName="seriesX9B_metalPaintedBlack_mat" />
         <material materialSlotName="seriesX9B_plasticPaintedGray_mat" />
-		<material materialSlotName="seriesX9CrawlerA_JOHNDEERE_GREEN1_mat" />
+<!-- 		<material materialSlotName="seriesX9CrawlerA_JOHNDEERE_GREEN1_mat" /> -->
     </designColorConfigurations>
 	<rimColorConfigurations useDefaultColors="true" defaultColorMaterialTemplateName="calibratedMetallicPaint">
         <rimColorConfiguration color="0.0 0.0 0.0" name="Thunderfarming Black" isDefault="true" />
